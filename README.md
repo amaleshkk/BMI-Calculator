@@ -5,7 +5,7 @@ Application to compute BMI and approximate body fat percentage based on user-pro
 ## Screenshots
 
 ### Home Screen
-![Home Screen](screenshots/home_screen.png)
+<img src="screenshots/home_screen.png" width="250"/>
 
 ### Result Screen
-![Result Screen](screenshots/home_screen.png)
+<img src="screenshots/result_screen.png" width="250"/>
