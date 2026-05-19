@@ -1,6 +1,7 @@
 import 'package:bmi_calculator/components/bottom_button.dart';
 import 'package:bmi_calculator/constants.dart';
 import 'package:bmi_calculator/components/data_display.dart';
+import 'package:bmi_calculator/screens/input_page.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
@@ -9,13 +10,13 @@ class ResultPage extends StatelessWidget {
     required this.bmiResult,
     required this.fatResult,
     required this.resultText,
-    required this.interpretation,
+    required this.gender,
   });
 
   final String bmiResult;
   final String fatResult;
   final String resultText;
-  final String interpretation;
+  final Gender? gender;
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +56,7 @@ class ResultPage extends StatelessWidget {
                       textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text("BMI:", style: kInfoTextStyle),
-                        Text(bmiResult, style: kBMITextStyle,),
+                        Text(bmiResult, style: kBMITextStyle),
                       ],
                     ),
                     Row(
@@ -63,16 +64,18 @@ class ResultPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.baseline,
                       textBaseline: TextBaseline.alphabetic,
                       children: [
-                        Text("FAT%:", style: kInfoTextStyle,),
-                        Text(fatResult, style: kBMITextStyle,),
+                        Text("FAT%:", style: kInfoTextStyle),
+                        Text(fatResult, style: kBMITextStyle),
                       ],
                     ),
                     Padding(
                       padding: const EdgeInsets.all(10.0),
-                      child: Image(image: AssetImage('images/body_fat_chart.png'),
+                      child: Image(
+                        image: gender == Gender.male
+                            ? kmaleChart.image
+                            : kfemaleChart.image,
                       ),
-                    )
-                    
+                    ),
                   ],
                 ),
               ),

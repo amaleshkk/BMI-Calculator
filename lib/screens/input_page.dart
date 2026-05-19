@@ -231,7 +231,7 @@ class _InputPageState extends State<InputPage> {
                         bmiResult: calc.calculateBMI(),
                         fatResult: calc.calculateBodyFat(),
                         resultText: calc.getResult(),
-                        interpretation: calc.getInterpretation(),
+                        gender: selectedGender,
                       );
                     },
                   ),

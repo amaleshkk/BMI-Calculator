@@ -59,38 +59,4 @@ class CalculateBrain {
       return getResultMale();
     }
   }
-
-  String getInterpretationMale() {
-    if (_bodyFat >= 30) {
-      return 'You have body weight falls within the obesity range. '
-          'It is recommended to consult a doctor for furthur evaluation and guidance';
-    } else if (_bodyFat >= 25) {
-      return 'You have higer than normal body weight. Try to exercise more.';
-    } else if (_bodyFat > 18) {
-      return 'You have normal body weight. Good job!';
-    } else {
-      return 'You have a normal body weight. You can eat bit more.';
-    }
-  }
-
-  String getInterpretationFemale() {
-    if (_bodyFat >= 38) {
-      return 'You have body weight falls within the obesity range. '
-          'It is recommended to consult a doctor for furthur evaluation and guidance';
-    } else if (_bodyFat >= 32) {
-      return 'You have higer than normal body weight. Try to exercise more.';
-    } else if (_bodyFat > 25) {
-      return 'You have normal body weight. Good job!';
-    } else {
-      return 'You have a normal body weight. You can eat bit more.';
-    }
-  }
-
-  String getInterpretation() {
-    if (gender == 0) {
-      return getInterpretationFemale();
-    } else {
-      return getInterpretationMale();
-    }
-  }
 }
