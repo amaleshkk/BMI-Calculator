@@ -29,11 +29,11 @@ class CalculateBrain {
   }
 
   String getResultMale() {
-    if (_bodyFat >= 30) {
+    if (_bmi >= 30) {
       return 'Obesity';
-    } else if (_bodyFat >= 25) {
+    } else if (_bmi >= 24.9) {
       return 'OverWeight';
-    } else if (_bodyFat >= 18) {
+    } else if (_bmi >= 18.5) {
       return 'Normal';
     } else {
       return 'Underweight';

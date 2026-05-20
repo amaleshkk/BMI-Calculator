@@ -35,8 +35,3 @@ const kInfoTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   color: Colors.red,
 );
-
-const kmaleChart = Image(image: AssetImage('images/body_fat_chart_male.png'));
-const kfemaleChart = Image(
-  image: AssetImage('images/body_fat_chart_female.png'),
-);

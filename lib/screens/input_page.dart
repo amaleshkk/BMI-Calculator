@@ -211,7 +211,7 @@ class _InputPageState extends State<InputPage> {
               ),
             ),
             BottomButton(
-              buttonTitle: 'CALCULATE YOUR BMI',
+              buttonTitle: 'CALCULATE BMI',
               onTap: () {
                 if (selectedGender == null) {
                   return;
@@ -220,7 +220,7 @@ class _InputPageState extends State<InputPage> {
                   height: height,
                   weight: weight,
                   age: age,
-                  gender: selectedGender?.index
+                  gender: selectedGender?.index,
                 );
 
                 Navigator.push(

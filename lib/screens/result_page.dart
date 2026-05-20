@@ -37,7 +37,7 @@ class ResultPage extends StatelessWidget {
             Expanded(
               child: Container(
                 alignment: Alignment.center,
-                child: Text('Your Result', style: kTitleTextStyle),
+                child: Text('Result', style: kTitleTextStyle),
               ),
             ),
             Expanded(
@@ -71,9 +71,7 @@ class ResultPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Image(
-                        image: gender == Gender.male
-                            ? kmaleChart.image
-                            : kfemaleChart.image,
+                        image: AssetImage('images/bmi_chart.png'),
                       ),
                     ),
                   ],
