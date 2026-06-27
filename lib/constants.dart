@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const kBottomContainerHeight = 70.0;
+const kBottomContainerHeight = 60.0;
 const kActiveCardColor = Color(0xFF3F4739);
 const kInactiveCardColor = Color(0xFF1D1E18);
 const Color kBottomContainerColor = Color(0xFF36151E);
@@ -34,4 +34,5 @@ const kBodyTextStyle = TextStyle(fontSize: 22.0);
 const kInfoTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   color: Colors.red,
+  fontSize: 30.0
 );

@@ -45,7 +45,7 @@ class ResultPage extends StatelessWidget {
               child: DataDisplay(
                 colour: kActiveCardColor,
                 cardChild: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
 
                   children: [
@@ -69,7 +69,7 @@ class ResultPage extends StatelessWidget {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(10.0),
+                      padding: const EdgeInsets.all(5.0),
                       child: Image(
                         image: AssetImage('images/bmi_chart.png'),
                       ),

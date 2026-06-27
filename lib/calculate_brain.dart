@@ -29,9 +29,11 @@ class CalculateBrain {
   }
 
   String getResultMale() {
-    if (_bmi >= 30) {
+    if (_bmi >= 35.0) {
+      return 'Extremely Obese';
+    }else if (_bmi >= 30.0) {
       return 'Obesity';
-    } else if (_bmi >= 24.9) {
+    } else if (_bmi >= 25) {
       return 'OverWeight';
     } else if (_bmi >= 18.5) {
       return 'Normal';

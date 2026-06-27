@@ -46,3 +46,11 @@ app.*.map.json
 
 #App key related
 /android/key.properties
+
+#Build related
+ios/
+linux/
+macos/
+test/
+web/
+windows/
