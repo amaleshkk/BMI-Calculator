@@ -28,10 +28,10 @@ class CalculateBrain {
     return _bodyFat.toStringAsFixed(1);
   }
 
-  String getResultMale() {
+  String getResult() {
     if (_bmi >= 35.0) {
       return 'Extremely Obese';
-    }else if (_bmi >= 30.0) {
+    } else if (_bmi >= 30.0) {
       return 'Obesity';
     } else if (_bmi >= 25) {
       return 'OverWeight';
@@ -39,26 +39,6 @@ class CalculateBrain {
       return 'Normal';
     } else {
       return 'Underweight';
-    }
-  }
-
-  String getResultFemale() {
-    if (_bodyFat >= 38) {
-      return 'Obesity';
-    } else if (_bodyFat >= 32) {
-      return 'OverWeight';
-    } else if (_bodyFat >= 25) {
-      return 'Normal';
-    } else {
-      return 'Underweight';
-    }
-  }
-
-  String getResult() {
-    if (gender == 0) {
-      return getResultFemale();
-    } else {
-      return getResultMale();
     }
   }
 }

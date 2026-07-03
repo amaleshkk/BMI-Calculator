@@ -21,7 +21,7 @@ class _RoundIconButtonState extends State<RoundIconButton> {
 
   void _startHold() {
     widget.onPressed?.call();
-    _holdTimer = Timer.periodic(const Duration(microseconds: 40000), (_) {
+    _holdTimer = Timer.periodic(const Duration(microseconds: 90000), (_) {
       widget.onPressed?.call();
     });
   }
@@ -33,7 +33,6 @@ class _RoundIconButtonState extends State<RoundIconButton> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _holdTimer?.cancel();
     super.dispose();
   }
