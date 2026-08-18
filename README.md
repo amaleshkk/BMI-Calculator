@@ -7,3 +7,5 @@ Application to compute BMI and approximate body fat percentage based on user-pro
 <img src="screenshots/home_screen.png" width="250" height="500"/>
 <img src="screenshots/result_screen.png" width="250" height="500"/>
 </p>
+
+[App Link](https://play.google.com/store/apps/details?id=com.lumora.bmicalculator&pcampaignid=web_share)
